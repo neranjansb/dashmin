@@ -1,0 +1,40 @@
+{
+  "name": "dashmin",
+  "version": "1.0.0",
+  "description": "Bootstrap admin dashboard.",
+  "main": "dist/js/dashmin.min.js",
+  "scripts": {
+    "css": "npm-run-all css-compile css-prefix css-minify",
+    "watch": "sass --watch build/scss:dist/css",
+    "watch-css": "nodemon -e scss -x \"npm run build-css\" ",
+    "minifi-css": "css-minify -d build/scss -o dist/css",
+    "vite": "vite",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "Admin",
+    "Dashboard",
+    "Bootstrap"
+  ],
+  "author": "Neranjan Dissanayake neranjansbd@gmail.com https://github.com/neranjansb",
+  "style": "dist/css/dashmin.css",
+  "sass": "build/scss/dashmin.scss",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/vuemin/dashmin"
+  },
+  "dependencies": {
+    "bootstrap": "^5.2.2"
+  },
+  "devDependencies": {
+    "css-minify": "^2.0.0",
+    "node-watch": "^0.7.3",
+    "nodemon": "^2.0.20",
+    "npm-run-all": "^4.1.5",
+    "postcss": "^8.4.17",
+    "postcss-cli": "^10.0.0",
+    "sass": "^1.55.0",
+    "vite": "^3.1.6"
+  }
+}
